@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[User name : test test]]>
+    </line>
+    <line>
+      <![CDATA[Size Selected : M]]>
+    </line>
+    <line>
+      <![CDATA[Size Selected : L]]>
+    </line>
+    <line>
+      <![CDATA[Quantity Selected : ]]>
+    </line>
+    <line>
+      <![CDATA[Object added to cart. Details : Product : Blouse; Details : Black, L; Quantity : 3; Price : $81.00]]>
+    </line>
+    <line>
+      <![CDATA[
+Total cart price : $116.02]]>
+    </line>
+    <line>
+      <![CDATA[
+Error message on not agreeing to Terms of Service : You must agree to the terms of service before continuing.]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57438" started-at="2018-06-12T12:16:17Z" finished-at="2018-06-12T12:17:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57438" started-at="2018-06-12T12:16:17Z" finished-at="2018-06-12T12:17:14Z">
+      <class name="src.test.TestNGTestSuite">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:src.test.TestNGTestSuite@1563da5]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2018-06-12T12:16:17Z" finished-at="2018-06-12T12:16:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:src.test.TestNGTestSuite@1563da5]" name="beforeTest" is-config="true" duration-ms="11021" started-at="2018-06-12T12:16:17Z" finished-at="2018-06-12T12:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="PurchaseProduct()[pri:0, instance:src.test.TestNGTestSuite@1563da5]" name="PurchaseProduct" duration-ms="45614" started-at="2018-06-12T12:16:28Z" finished-at="2018-06-12T12:17:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[User name : test test]]>
+            </line>
+            <line>
+              <![CDATA[Size Selected : M]]>
+            </line>
+            <line>
+              <![CDATA[Size Selected : L]]>
+            </line>
+            <line>
+              <![CDATA[Quantity Selected : ]]>
+            </line>
+            <line>
+              <![CDATA[Object added to cart. Details : Product : Blouse; Details : Black, L; Quantity : 3; Price : $81.00]]>
+            </line>
+            <line>
+              <![CDATA[
+Total cart price : $116.02]]>
+            </line>
+            <line>
+              <![CDATA[
+Error message on not agreeing to Terms of Service : You must agree to the terms of service before continuing.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PurchaseProduct -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:src.test.TestNGTestSuite@1563da5]" name="afterTest" is-config="true" duration-ms="766" started-at="2018-06-12T12:17:13Z" finished-at="2018-06-12T12:17:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:src.test.TestNGTestSuite@1563da5]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-06-12T12:17:14Z" finished-at="2018-06-12T12:17:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- src.test.TestNGTestSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
