@@ -69,7 +69,7 @@ public class TestNGTestSuite {
 	 * This method is used to test Login functionality against invalid input
 	 */
 
-	/*@Test
+	@Test
 	public void FailLogin() {
 		LoginPage objLP = new LoginPage(objWDP.getWebDriver());
 		//Authenticate login - incorrect password
@@ -88,10 +88,10 @@ public class TestNGTestSuite {
 		assertEquals(objLP.showErrorMessage(), objReadProp.getValue(IncorrectLoginErrorMessage));
 	}
 
-	*/
+	
 	/**
 	 * This method is used to test Logout functionality
-	 *//*
+	 */
 	@Test
 	public void LogOut() {
 		LoginPage objLP = new LoginPage(objWDP.getWebDriver());
@@ -104,7 +104,7 @@ public class TestNGTestSuite {
 		objUAP.clickSignOut();
 		assertEquals(objUAP.getDriver().getTitle(), "Login - My Store");
 	}
-*/
+
 	/**
 	 * This method is used to test product purchase functionality
 	 */

@@ -10,9 +10,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class WebDriverPage {
 	
 	private final String keyChromeDriverPath = "ChromeDriverPath";
-	private final String keyFirefixDriverPath = "FirefixDriverPath";
+	private final String keyFirefoxDriverPath = "FirefoxDriverPath";
 	private final String sysPropertyChrome = "webdriver.chrome.driver";
 	private final String sysPropertyFirefox = "webdriver.gecko.driver";
+	private final String keyWaitTimeOutInSeconds = "waitTimeOutInSeconds";
 	
 	private WebDriver webDriver;
 	private String driverPath;
@@ -21,21 +22,22 @@ public class WebDriverPage {
 	@SuppressWarnings("deprecation")
 	public WebDriverPage(String browser, String appURL) {
 		ReadPropertiesFile objReadProp = new ReadPropertiesFile();
+		int waiTime = Integer.parseInt(objReadProp.getValue(keyWaitTimeOutInSeconds));
 		if(browser.equalsIgnoreCase("chrome")) {
 			driverPath = objReadProp.getValue(keyChromeDriverPath);
 			System.setProperty(sysPropertyChrome, driverPath);
 			webDriver = new ChromeDriver();
-			webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			webDriver.manage().timeouts().implicitlyWait(waiTime, TimeUnit.SECONDS);
 			//webDriver.manage().window().maximize();
 			webDriver.get(appURL);
 		}
 		else if(browser.equalsIgnoreCase("firefox")){
-			driverPath = objReadProp.getValue(keyFirefixDriverPath);
+			driverPath = objReadProp.getValue(keyFirefoxDriverPath);
 			System.setProperty(sysPropertyFirefox, driverPath);
 			DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 		    capabilities.setCapability("marionette", true);
 		    webDriver = new FirefoxDriver(capabilities);
-		    webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    webDriver.manage().timeouts().implicitlyWait(waiTime, TimeUnit.SECONDS);
 		    webDriver.get(appURL);
 		}
 		else {
